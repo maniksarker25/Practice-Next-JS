@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -15,13 +15,9 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="flex gap-4">
-          <Link href='/'>Home</Link> 
-          <Link href='/about'>About</Link> 
-          <Link href='/dashboard'>Dashboard</Link> 
-        </nav>
+        
         {children}
-        <footer>Footer</footer>
+
         </body>
     </html>
   );
